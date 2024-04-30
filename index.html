@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>COMMUNITY</title>
+
+        <body style="background-color:rgb(0, 0, 0);"></body>
+
+        <style>
+            .row{
+                margin-top:auto;
+            }
+            .column{
+                width:33%;
+                margin:auto;
+                text-align: center;
+                display: inline-block;
+            }
+
+        </style>
+
+    </head>
+
+    <body> 
+                 <div class="row">
+                    <div class="column">
+                        <img id="food" src="img/1_1.png" height="255" width="255"/>
+                    </div>
+                    <div class="column">
+                        <img id="t1" src="img/1_2.png" height="255" width="255"/>
+                    </div>
+                    <div class="column">
+                        <img id="movie" src="img/1_3.png" height="255" width="255"/>
+                    </div>
+                </div> 
+        
+                <div class="row">
+                    <div class="column">
+                        <img id="architecture" src="img/1_4.png" height="255" width="255"/>
+                    </div>
+                    <div class="column">
+                        <img id="taekwondo" src="img/1_5.png" height="255" width="255"/>
+                    </div>
+                    <div class="column">
+                        <img id="game" src="img/1_6.png" height="255" width="255"/>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="column">
+                        <img id="instrument" src="img/1_7.png" height="255" width="255"/>
+                    </div>
+                    <div class="column">
+                        <img id="concert" src="img/1_8.png" height="255" width="255"/>
+                    </div>
+                    <div class="column">
+                        <img id="hangul" src="img/1_9.png" height="255" width="255"/>
+                    </div>
+                </div> 
+        
+            </body>
+        
+        </html>
+
+<script>
+    const chopping = document.createElement ('audio')
+    chopping.src = 'aud/1_food01.mp3'
+
+    const food = document.getElementById ('food')
+    food.onpointerover = () => {
+        food.src = 'img/2_1.png'
+    }
+    food.onpointerleave = () => {
+        food.src = 'img/1_1.png'
+    }
+    food.onpointerdown = () => {
+        chopping.play ()
+    }
+
+    const keyboard = document.createElement ('audio')
+    keyboard.src = 'aud/2_t1.mp3'
+
+    const t1 = document.getElementById ('t1')
+    t1.onpointerover = () => {
+        t1.src = 'img/2_2.png'
+    }
+    t1.onpointerleave = () => {
+        t1.src = 'img/1_2.png'
+    }
+    t1.onpointerdown = () => {
+        keyboard.play ()
+    }
+
+    const film = document.createElement ('audio')
+    film.src = 'aud/3_movie.mp3'
+
+    const movie = document.getElementById ('movie')
+    movie.onpointerover = () => {
+        movie.src = 'img/2_3.png'
+    }
+    movie.onpointerleave = () => {
+        movie.src = 'img/1_3.png'
+    }
+    movie.onpointerdown = () => {
+        film.play ()
+    }
+
+    const door = document.createElement ('audio')
+    door.src = 'aud/4_architecture02.mp3'
+
+    const architecture = document.getElementById ('architecture')
+    architecture.onpointerover = () => {
+        architecture.src = 'img/2_4.png'
+    }
+    architecture.onpointerleave = () => {
+        architecture.src = 'img/1_4.png'
+    }
+    architecture.onpointerdown = () => {
+        door.play ()
+    }
+
+    const swoosh = document.createElement ('audio')
+    swoosh.src = 'aud/5_taekwondo.mp3'
+
+    const taekwondo = document.getElementById ('taekwondo')
+    taekwondo.onpointerover = () => {
+        taekwondo.src = 'img/2_5.png'
+    }
+    taekwondo.onpointerleave = () => {
+        taekwondo.src = 'img/1_5.png'
+    }
+    taekwondo.onpointerdown = () => {
+        swoosh.play ()
+    }
+
+    const wooden = document.createElement ('audio')
+    wooden.src = 'aud/6_game03.mp3'
+
+    const game = document.getElementById ('game')
+    game.onpointerover = () => {
+        game.src = 'img/2_6.png'
+    }
+    game.onpointerleave = () => {
+        game.src = 'img/1_6.png'
+    }
+    game.onpointerdown = () => {
+        wooden.play ()
+    }
+
+    const drum = document.createElement ('audio')
+    drum.src = 'aud/7_instrument.mp3'
+
+    const instrument = document.getElementById ('instrument')
+    instrument.onpointerover = () => {
+        instrument.src = 'img/2_7.png'
+    }
+    instrument.onpointerleave = () => {
+        instrument.src = 'img/1_7.png'
+    }
+    instrument.onpointerdown = () => {
+        drum.play ()
+    }
+
+    const flash = document.createElement ('audio')
+    flash.src = 'aud/8_concert.mp3'
+
+    const concert = document.getElementById ('concert')
+    concert.onpointerover = () => {
+        concert.src = 'img/2_8.png'
+    }
+    concert.onpointerleave = () => {
+        concert.src = 'img/1_8.png'
+    }
+    concert.onpointerdown = () => {
+        flash.play ()
+    }
+
+    const writing = document.createElement ('audio')
+    writing.src = 'aud/9_hangul.mp3'
+
+    const hangul = document.getElementById ('hangul')
+    hangul.onpointerover = () => {
+        hangul.src = 'img/2_9.png'
+    }
+    hangul.onpointerleave = () => {
+        hangul.src = 'img/1_9.png'
+    }
+    hangul.onpointerdown = () => {
+        writing.play ()
+    }
+</script>
